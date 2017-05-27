@@ -9,7 +9,7 @@ import start.WordChainsGraph;
 
 public class GraphTest {
 	
-	private String dictionaryPath = "D:/progs/workspaceEclipse/WordChains/src/test/resources/test-dictionary.txt";
+	private String dictionaryPath = getClass().getClassLoader().getResource("test-dictionary.txt").getPath();
 	
 	@Test
 	public void amountOfNodesShouldBeEqualsAmountOfWordsInDictionary() {

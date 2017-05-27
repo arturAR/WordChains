@@ -9,7 +9,7 @@ public class StartApp {
 	
 	private static String beginWord = "";
 	private static String endWord = "";
-	private static String dictionaryPath = "D:/progs/workspaceEclipse/WordChains/src/main/resources/dictionary.txt";
+	private static String dictionaryPath = StartApp.class.getClassLoader().getResource("dictionary.txt").getPath();
 
 	public static void main(String[] args) {
 		Dictionary dict = new Dictionary();

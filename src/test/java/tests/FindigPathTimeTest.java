@@ -9,8 +9,8 @@ import start.WordChain;
 
 public class FindigPathTimeTest {
 	
-	private String dictionaryTestPath = "D:/progs/workspaceEclipse/WordChains/src/test/resources/test-dictionary.txt";
-	private String dictionaryPath = "D:/progs/workspaceEclipse/WordChains/src/main/resources/dictionary.txt";
+	private String dictionaryTestPath = getClass().getClassLoader().getResource("test-dictionary.txt").getPath();
+	private String dictionaryPath = getClass().getClassLoader().getResource("dictionary.txt").getPath();
 	private WordChain app;
 	
 	@Test(timeout = 1000)
